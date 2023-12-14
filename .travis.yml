@@ -3,6 +3,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t jaypd/Docker-react -f Dockerfile.dev .
+  - docker build -t jaypd/docker-react -f Dockerfile.dev .
 script:
-  - docker run -e CI=true jaypd/Docker-react npm run test
+  - docker run -e CI=true jaypd/docker-react npm run test
